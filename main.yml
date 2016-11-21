@@ -1,0 +1,6 @@
+---
+- name: Apply command to all hosts.
+  hosts: all
+  tasks:
+    - include: tasks/main.yml
+
