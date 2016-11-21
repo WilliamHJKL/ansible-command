@@ -1,4 +1,4 @@
 ---
 # tasks file for ansible-command
 - name : Run package cleanup command
-  command : /bin/package-cleanup --oldkernels --count=1
+  command : /bin/package-cleanup -y --oldkernels --count=1
