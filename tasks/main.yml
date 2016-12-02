@@ -8,7 +8,6 @@
 
 - name : Run package cleanup command
   command : /bin/package-cleanup -y --oldkernels --count=1
-dd
 
 - name : Enable qemu-guest-agent
   service:
