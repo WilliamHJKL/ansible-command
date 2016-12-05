@@ -1,7 +1,7 @@
 ---
 # tasks file for ansible-command
 - name : Install packages on guests.
-  yum: "name{{ item }} state=latest"
+  yum: name={{ item }} state=latest
   with_items:
     - yum-utils
     - qemu-guest-agent
