@@ -1,10 +1,10 @@
 ---
 # tasks file for ansible-command
 - name : Install packages on guests.
-  yum: "pkgs={{ item }} state=latest"
+  yum: "name{{ item }} state=latest"
   with_items:
-    - qemu-guest-agent
     - yum-utils
+    - qemu-guest-agent
 
 - name : Run package cleanup command
   command : /bin/package-cleanup -y --oldkernels --count=1
